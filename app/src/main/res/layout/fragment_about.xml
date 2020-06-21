@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.AboutFragment"
+    android:background="@color/dark_background">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/about_Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_background"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        app:titleTextColor="#fff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:fontFamily="@font/roboto_light"
+            android:textColor="#fff"
+            android:textSize="18sp">
+
+        </TextView>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/about_Toolbar"
+        android:layout_margin="5dp"
+        android:id="@+id/circular_Image_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/colorPrimaryDark"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/about_Toolbar"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@mipmap/ic_dev_img" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Joydip Bose"
+                android:textSize="25sp"
+                android:textColor="@color/text_colour"/>
+
+
+            <TextView
+                android:layout_margin="5dp"
+                android:fontFamily="@font/roboto_light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Android Developer"
+                android:textSize="18sp"
+                android:textColor="@color/text_colour"/>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/check_updates_bttn"
+                    android:layout_margin="5dp"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboto"
+                    android:text="Check Updates"
+                    android:padding="5dp"
+                    android:textSize="10dp"
+                    android:textColor="@color/text_colour"
+                    android:background="@drawable/button_bg"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <RelativeLayout
+        android:layout_below="@+id/circular_Image_Layout"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:fontFamily="@font/roboto"
+            android:id="@+id/credits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Credits"
+            android:textSize="25sp"
+            android:gravity="left"
+            android:layout_margin="5dp"
+            android:textColor="@color/text_colour">
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/credits_tab"
+            android:layout_below="@+id/credits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_light"
+                android:text="\u2022 FFMPEG Library Used"
+                android:textSize="15sp"
+                android:gravity="left"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/text_colour">
+            </TextView>
+
+            <TextView
+                android:fontFamily="@font/roboto_light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\u2022 Flaticon Used For Icons"
+                android:textSize="15sp"
+                android:gravity="left"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/text_colour">
+            </TextView>
+
+
+            <TextView
+                android:fontFamily="@font/roboto_light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\u2022 Circular ImageView Used"
+                android:textSize="15sp"
+                android:gravity="left"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/text_colour">
+            </TextView>
+
+            <TextView
+                android:fontFamily="@font/roboto_light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\u2022 Android-FileBrowser-FilePicker Used"
+                android:textSize="15sp"
+                android:gravity="left"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/text_colour">
+            </TextView>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_below="@+id/credits_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/follow_me"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Social Platforms"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/text_colour"
+                android:textSize="18sp"/>
+
+
+            <LinearLayout
+                android:layout_below="@+id/follow_me"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/google_play"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/ic_google_play">
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/github"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/ic_github_image">
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/website"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/ic_www">
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/youtube"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/ic_youtube">
+                </ImageView>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

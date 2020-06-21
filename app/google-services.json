@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "708447132533",
+    "firebase_url": "https://mp3-converter-dcc15.firebaseio.com",
+    "project_id": "mp3-converter-dcc15",
+    "storage_bucket": "mp3-converter-dcc15.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:708447132533:android:bccf025a94f13d44d1513c",
+        "android_client_info": {
+          "package_name": "com.androdude.mp3converter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "708447132533-r6gc4g5sl1c1atkp6fun7lif2iqdj1n2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQx1y3X4aRjYzl2KKarO9LvC-SGPwA00g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "708447132533-r6gc4g5sl1c1atkp6fun7lif2iqdj1n2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
